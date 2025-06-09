@@ -1,671 +1,698 @@
-<!DOCTYPE html>
-<html lang="en">
+<html class="h-full" lang="en"><head>
+    <meta charSet="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossOrigin="anonymous"
+    />
+    <link
+      id="google-fonts-link"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/8e98006f77.js"
+      crossOrigin="anonymous"
+    ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>:root { --accent-color: #D95F33; --accent2-color: #F28C56; --accent3-color: #81A2C8; --accent4-color: #ADB9C9; --primary-color: #4C5D70; --dark-text-color: #3E4754; --gray-text-color: #7D8C9B; --button-padding-x: 16px; --button-padding-y: 8px; --font-family-body: 'Inter', sans-serif; --light-text-color: #F5F7FA; --dark-border-color: #3E4754; --light-border-color: #E0E6ED; --font-family-heading: 'Poppins', sans-serif; --button-rounded-radius: 6px; --dark-background-color: #2F3945; --light-background-color: #EAF0F5; --medium-background-color: #D9E0E7; --primary-button-bg-color: #4C5D70; --primary-button-text-color: #FFFFFF; --secondary-button-bg-color: #D9E0E7; --secondary-button-text-color: #4C5D70; --primary-button-hover-bg-color: #2F434E; --primary-button-hover-text-color: #FFFFFF; --secondary-button-hover-bg-color: #BEC6CD; --secondary-button-hover-text-color: #4C5D70; }</style>
+    <style>
 
-<head>
-    <meta charset="utf-8">
-    <title>Inkwell Innovations - Marketing Consultant</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
+.hovered-element {
+  outline: #3871E0 dashed 2px;
+}
 
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+.clicked-element {
+  outline: #3871E0 solid 2px;
+}
 
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Roboto:wght@500;700&display=swap" rel="stylesheet">  
-
-    <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-
-    <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
-
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
-</head>
-
-<body>
-    <!-- Spinner Start -->
-    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
-    </div>
-    <!-- Spinner End -->
-
-
-    <!-- Topbar Start -->
-    <div class="container-fluid bg-primary text-white d-none d-lg-flex">
-        <div class="container py-3">
-            <div class="d-flex align-items-center">
-                <a href="index.html">
-                    <h2 class="text-white fw-bold m-0">Inkwell Innovations</h2>
-                </a>
-                <div class="ms-auto d-flex align-items-center">
-                    <small class="ms-4"><i class="fa fa-map-marker-alt me-3"></i>Dresden Germany</small>
-                    <small class="ms-4"><i class="fa fa-envelope me-3"></i>indreshnagaraju@gmail.com</small>
-                    <small class="ms-4"><i class="fa fa-phone-alt me-3"></i>+49-17629880410</small>
-                    <div class="ms-3 d-flex">
-                        <a class="btn btn-sm-square btn-light text-primary rounded-circle ms-2" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-sm-square btn-light text-primary rounded-circle ms-2" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-sm-square btn-light text-primary rounded-circle ms-2" href=""><i class="fab fa-linkedin-in"></i></a>
-                    </div>
+.clicked-code-section {
+  border: #3B82F6 solid 2px;
+}
+</style>
+    <link rel="icon" type="image/png" href="https://landingsite-app-public.s3.us-east-2.amazonaws.com/logos/user/236992b3-281a-4734-8899-db27d6d68946/b1269431-ec7e-4a60-bf4d-f3bb91452cdf-favicon-0.png">
+<link rel="apple-touch-icon" type="image/png" href="https://landingsite-app-public.s3.us-east-2.amazonaws.com/logos/user/236992b3-281a-4734-8899-db27d6d68946/b1269431-ec7e-4a60-bf4d-f3bb91452cdf-favicon-0.png">
+  </head><body class="h-full bg-white">
+    <div class="frame-root">
+      <div class="frame-content">
+        <div class="[font-family:var(--font-family-body)]"><div><header class="relative z-50 border-b border-[var(--light-border-color)] bg-[#faf8f4] code-section" id="global-header">
+  <nav class="">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-5 py-6">
+      <a class="block text-3xl font-bold text-[var(--primary-color)] [font-family:var(--font-family-heading)]" href="/" data-logo=""><img src="https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/4391033f-610b-47a1-8e5c-32f9b8dece00/public" alt="Bloom Rock Logo" class="h-20"></a>
+      <div class="flex md:hidden">
+        <button id="mobile-menu-button" data-collapse-toggle="navigation-menu" type="button" class="toggleMenu" aria-controls="navigation-menu" aria-expanded="false" aria-label="Navigation Menu">
+          <i class="fa-regular fa-bars text-2xl" aria-hidden="true"></i>
+        </button>
+      </div>
+      <div id="navigation-menu" class="hidden absolute left-0 top-full w-screen bg-[#ffffff] pb-4 lg:static lg:flex flex-1 lg:items-center lg:justify-between lg:bg-transparent lg:pb-0">
+        <ul class="flex flex-col lg:px-6 lg:flex-row flex-1 lg:justify-center lg:items-center lg:space-y-0 lg:space-x-8">
+          <li class="flex items-center p-2 border-t border-gray-200 lg:border-t-transparent lg:p-0">
+            <a href="/about" class="transition ease-linear md:hover:text-black">About Us</a>
+          </li>
+          <li class="flex items-center p-2 border-t border-gray-200 lg:border-t-transparent lg:p-0">
+            <div class="group relative">
+              <button class="flex w-full cursor-pointer flex-row items-center gap-1 transition ease-linear md:hover:text-black">
+                <span>Products</span>
+                <i class="fa-regular fa-chevron-down ml-1 transition-[rotate] lg:group-hover:rotate-[180deg]" aria-hidden="true"></i>
+              </button>
+              <div class="left-0 top-full z-50 hidden w-full text-black lg:absolute lg:w-[260px] lg:pt-2 lg:group-hover:block">
+                <div class="mt-2 bg-white p-1.5 lg:rounded-lg lg:border lg:border-gray-200 lg:shadow-sm">
+                  <a class="block cursor-pointer border-b border-solid px-3 py-1.5 hover:bg-[#1900410a] lg:py-3 lg:font-medium" href="/products#granite-slabs">Granite Slabs</a>
+                  <a class="block cursor-pointer border-b border-solid px-3 py-1.5 hover:bg-[#1900410a] lg:py-3 lg:font-medium" href="/products#rough-blocks">Rough Blocks</a>
+                  <a class="block cursor-pointer px-3 py-1.5 hover:bg-[#1900410a] lg:py-3 lg:font-medium" href="/products#monuments">Monuments</a>
                 </div>
+              </div>
             </div>
+          </li>
+          <li class="flex items-center p-2 border-t border-gray-200 lg:border-t-transparent lg:p-0">
+            <a href="/services" class="transition ease-linear md:hover:text-black">Services</a>
+          </li>
+          <li class="flex items-center p-2 border-t border-gray-200 lg:border-t-transparent lg:p-0">
+            <a href="/gallery" class="transition ease-linear md:hover:text-black">Gallery</a>
+          </li>
+        </ul>
+        <div class="flex flex-col md:flex-row items-center space-y-4 md:mt-0 md:space-y-0 md:space-x-4 px-5 md:p-0">
+          <a class="rounded-[var(--button-rounded-radius)] rounded-br-none border bg-[var(--primary-button-bg-color)] px-[var(--button-padding-x)] py-[var(--button-padding-y)] text-lg font-light text-[var(--primary-button-text-color)] transition ease-linear hover:bg-[var(--primary-button-hover-bg-color)] hover:text-[var(--primary-button-hover-text-color)] md:px-8 md:py-4" href="/contact">
+            <span>Contact</span>
+          </a>
         </div>
+      </div>
     </div>
-    <!-- Topbar End -->
+  </nav>
+</header></div><div><section
+  class="relative overflow-hidden bg-[#faf8f4] code-section"
+  id="srje8wn">
+  <div
+    class="mx-auto grid max-w-7xl gap-20 px-5 py-10 lg:grid-cols-2 lg:gap-5 lg:py-20">
+    <div>
+      <div
+        class="relative text-3xl font-bold leading-tight md:text-5xl xl:text-7xl">
+        <h1 class="min-h-[6rem] pr-24 [font-family:var(--font-family-heading)]">
+          <span class="relative z-20">Elevate Your Projects</span><span> </span
+          ><span class="relative"
+            >With Premium Granite<img
+              class="absolute -bottom-2 left-0 z-10 w-40 md:-bottom-4 md:w-60 xl:-bottom-6 xl:w-auto"
+              src="https://landingsite-static-web-images.s3.us-east-2.amazonaws.com/template10/double-line.svg"
+              alt=""
+              data-dont-replace="" /></span
+          ><span> </span
+          ><span class="relative z-20">Sourced with Expertise</span>
+        </h1>
+      </div>
+      <p class="pb-9 pt-4 text-lg font-light text-[var(--gray-text-color)]">
+        Discover unparalleled quality and service in granite procurement,
+        tailored specifically to meet your business needs. Our strong ties with
+        renowned quarries in India ensure that you receive only the best
+        materials for your projects.
+      </p>
+      <div
+        class="relative flex flex-col items-start gap-4 pb-24 sm:flex-row md:items-center md:gap-10">
+        <img
+          class="absolute right-0 top-10 z-10 w-20 md:w-auto xl:top-0"
+          src="https://landingsite-static-web-images.s3.us-east-2.amazonaws.com/template10/green-curve-shape.svg"
+          alt="curve shape"
+          data-dont-replace="" />
+      </div>
+    </div>
+    <div class="relative grid grid-cols-5 gap-x-8 gap-y-4 lg:pl-20">
+      <div class="relative col-span-2">
+        <div></div>
+        <img
+          class="https://landingsite-static-web-images.s3.us-east-2.amazonaws.com/template10/four-angle-star.svg"
+          alt=""
+          data-dont-replace="" />
+      </div>
+      <div class="relative col-span-3">
+        <img
+          class="relative z-20 h-40 w-full rounded-[30px] object-cover shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] sm:h-48"
+          src="https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/e15a9395-f61a-4002-3300-568b4c4ef100/publicContain"
+          alt="Modern kitchen with stainless steel appliances, granite countertops, and stylish cabinetry. Open layout with a spacious island and hanging glass pendant lights. Investment, renting, or homeownership concept."
+          data-landingsite-gallery-type="image"
+          data-media='{"id":"2176905649","src":"iStock","type":"image"}' />
+        <div
+          class="absolute inset-0 z-[1] h-40 w-full -translate-y-2 translate-x-2 rounded-[30px] bg-[var(--primary-color)] sm:h-48"></div>
+      </div>
+      <div class="relative col-span-5">
+        <!-- leave data-seo-image attribute on this img -->
+        <img
+          class="relative z-20 h-64 w-full rounded-[30px] object-cover shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] sm:h-[340px]"
+          src="https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/90f1c408-2497-4428-e3fc-960e83437b00/public"
+          alt="Kitchen in new luxury home with granite quartz table with bouquet of flowers"
+          data-landingsite-gallery-type="image"
+          data-seo-image=""
+          data-media='{"id":"1648248415","src":"iStock","type":"image"}' />
+        <div
+          class="absolute inset-0 z-10 h-64 w-full translate-x-2 translate-y-2 rounded-[30px] bg-[var(--primary-color)] sm:h-[340px]"></div>
+        <img
+          class="absolute -left-6 -top-6 z-30 w-16 sm:w-auto"
+          src="https://landingsite-static-web-images.s3.us-east-2.amazonaws.com/template10/orange-dots.svg"
+          alt=""
+          data-dont-replace="" /><img
+          class="absolute -bottom-10 -right-10 z-30 w-16 sm:w-auto"
+          src="https://landingsite-static-web-images.s3.us-east-2.amazonaws.com/template10/orange-dots.svg"
+          alt=""
+          data-dont-replace="" />
+      </div>
+      <div class="relative col-span-3 sm:col-span-2">
+        <img
+          class="relative z-20 h-32 w-full rounded-[30px] object-cover shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] xl:h-40"
+          src="https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/a3d76574-681a-497e-7250-49c306e5f300/publicContain"
+          alt="Natural Marble High Resolution Marble texture background, Italian marble slab, The texture of limestone Polished natural granite marbel for Ceramic Floor Tiles And Wall Tiles."
+          data-landingsite-gallery-type="image"
+          data-media='{"id":"1684836734","src":"iStock","type":"image"}' />
+        <div
+          class="absolute inset-0 z-[1] h-32 w-full -translate-y-1 translate-x-1 rounded-[30px] bg-[var(--primary-color)] xl:h-40"></div>
+      </div>
+      <div class="relative col-span-2 sm:col-span-3">
+        <img
+          class="absolute right-0 top-4 z-10 sm:left-32"
+          src="https://landingsite-static-web-images.s3.us-east-2.amazonaws.com/template10/four-angle-star.svg"
+          alt=""
+          data-dont-replace="" /><img
+          class="absolute -bottom-10 right-0 z-10 hidden sm:block xl:bottom-0"
+          src="https://landingsite-static-web-images.s3.us-east-2.amazonaws.com/template10/orange-curve-shape.svg"
+          alt=""
+          data-dont-replace="" />
+      </div>
+      <div
+        class="absolute -right-20 left-0 top-1/2 h-[590px] -translate-y-1/2 rounded-3xl bg-[var(--light-background-color)]"></div>
+    </div>
+  </div>
+</section>
 
-
-    <!-- Navbar Start -->
-    <div class="container-fluid bg-white sticky-top">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg bg-white navbar-light p-lg-0">
-                <a href="index.html" class="navbar-brand d-lg-none">
-                    <h1 class="fw-bold m-0">Inkwell Innovations</h1>
-                </a>
-                <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <div class="navbar-nav">
-                        <a href="index.html" class="nav-item nav-link active">Home</a>
-                        <a href="about.html" class="nav-item nav-link">About</a>
-                        <a href="service.html" class="nav-item nav-link">Services</a>
-                        <a href="project.html" class="nav-item nav-link">Projects</a>
-                        <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                            <div class="dropdown-menu bg-light rounded-0 rounded-bottom m-0">
-                                <a href="feature.html" class="dropdown-item">Features</a>
-                                <a href="team.html" class="dropdown-item">Our Team</a>
-                                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                                <a href="quote.html" class="dropdown-item">Quotation</a>
-                                <a href="404.html" class="dropdown-item">404 Page</a>
-                            </div>
-                        </div>
-                        <a href="contact.html" class="nav-item nav-link">Contact</a>
-                    </div>
-                    <div class="ms-auto d-none d-lg-block">
-                        <a href="" class="btn btn-primary rounded-pill py-2 px-3">Get A Quote</a>
-                    </div>
-                </div>
-            </nav>
+<section class="code-section bg-[#faf8f4]" id="st88zn">
+  <div class="mx-auto max-w-7xl px-5 py-10 lg:py-20">
+    <div class="relative grid items-center gap-y-5 lg:grid-cols-2 xl:gap-10">
+      <div class="relative">
+        <h1
+          class="text-4xl/normal font-bold [font-family:var(--font-family-heading)] lg:text-5xl/normal xl:text-6xl/normal">
+          Source Premium Granite from India and Around the World for Your
+          Projects
+        </h1>
+        <img
+          class="absolute left-12 top-12 z-10 w-40 lg:top-16 lg:w-64 xl:top-20"
+          src="https://landingsite-static-web-images.s3.us-east-2.amazonaws.com/template10/double-line.svg"
+          alt=""
+          data-dont-replace="" />
+      </div>
+      <p class="font-thin text-[var(--gray-text-color)] lg:pl-20 lg:text-lg">
+        Unlock the potential of your construction and design projects with our
+        top-tier Indian granite. With direct access to renowned quarries, we
+        ensure that every slab, block, and monument meets the highest standards
+        of quality and durability. Experience seamless procurement tailored to
+        your specific needs, whether you're looking for Premium Black, Steel
+        Grey, or bespoke solutions.
+      </p>
+      <img
+        class="absolute left-1/2 top-32 z-10 hidden -translate-x-1/2 lg:block xl:top-40"
+        src="https://landingsite-static-web-images.s3.us-east-2.amazonaws.com/template10/green-curve-shape-easy.svg"
+        alt=""
+        data-dont-replace="" />
+    </div>
+    <div class="grid gap-9 pt-10 lg:grid-cols-3 lg:pt-28">
+      <div
+        class="relative rounded-3xl bg-gray-200 px-6 pb-40 pt-8 xl:px-9 xl:pt-12">
+        <h3 class="text-2xl md:text-3xl xl:text-4xl">
+          <span>Consistent Quality for</span><span> </span
+          ><span class="text-[var(--primary-color)]">Every Project</span>
+        </h3>
+        <p class="pt-4 text-lg font-thin">
+          Our rigorous inspection protocols and comprehensive technical
+          documentation guarantee the premium quality of each granite product,
+          providing you with peace of mind for your investments.
+        </p>
+        <img
+          class="absolute bottom-4 left-4 h-[100px] w-[105px]"
+          src="https://landingsite-static-web-images.s3.us-east-2.amazonaws.com/template10/swirl.svg"
+          alt="" />
+        <div
+          class="absolute bottom-0 right-0 flex h-24 w-24 items-end justify-end rounded-tl-3xl bg-[#faf8f4] md:h-32 md:w-32">
+          <div
+            class="group relative flex h-20 w-20 items-center justify-center rounded-full bg-gray-200 md:h-28 md:w-28">
+            <div class="text-[var(--primary-color)] text-3xl">
+              <i class="fa-regular fa-magnifying-glass" aria-hidden="true"></i>
+            </div>
+            <div
+              class="absolute -left-10 bottom-0 z-10 h-12 w-6 rounded-br-3xl bg-gray-200 shadow-[0_15px_0_0_#faf8f4] lg:shadow-[0_25px_0_0_#faf8f4]"></div>
+            <div
+              class="absolute -top-16 right-0 z-10 h-12 w-6 rounded-br-3xl bg-gray-200 shadow-[0_15px_0_0_#faf8f4] lg:shadow-[0_25px_0_0_#faf8f4]"></div>
+          </div>
         </div>
-    </div>
-    <!-- Navbar End -->
-
-
-    <!-- Carousel Start -->
-    <div class="container-fluid px-0 mb-5">
-        <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img class="w-100" src="img/carousel-1.jpg" alt="Image">
-                    <div class="carousel-caption">
-                        <div class="container">
-                            <div class="row justify-content-start">
-                                <div class="col-lg-7 text-start">
-                                    <p class="fs-4 text-white animated slideInRight">Welcome to <strong>Inkwell Innovations</strong></p>
-                                    <h1 class="display-1 text-white mb-4 animated slideInRight">Unlock Your Business Growth</h1>
-                                    <a href="" class="btn btn-primary rounded-pill py-3 px-5 animated slideInRight">Explore More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img class="w-100" src="img/carousel-2.jpg" alt="Image">
-                    <div class="carousel-caption">
-                        <div class="container">
-                            <div class="row justify-content-end">
-                                <div class="col-lg-7 text-end">
-                                    <p class="fs-4 text-white animated slideInLeft">Welcome to <strong>Inkwell Innovations</strong></p>
-                                    <h1 class="display-1 text-white mb-5 animated slideInLeft">Ready to Grow Your Business</h1>
-                                    <a href="" class="btn btn-primary rounded-pill py-3 px-5 animated slideInLeft">Explore More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      </div>
+      <div
+        class="relative rounded-3xl bg-gray-200 px-6 pb-40 pt-8 lg:pb-12 lg:pt-40 xl:px-9">
+        <h3 class="text-2xl md:text-3xl xl:text-4xl">
+          <span>Cost-Effective Solutions for</span><span> </span
+          ><span class="text-[var(--primary-color)]">Smart Procurement</span>
+        </h3>
+        <p class="pt-4 text-lg font-thin">
+          By partnering directly with quarries and factories, we cut out the
+          middleman, ensuring competitive pricing that aligns with your budget
+          without sacrificing quality.
+        </p>
+        <img
+          class="absolute bottom-10 left-10 h-[76px] w-[82px] lg:top-10"
+          src="https://landingsite-static-web-images.s3.us-east-2.amazonaws.com/template10/globe.svg"
+          alt=""
+          data-dont-replace="" />
+        <div
+          class="absolute bottom-0 right-0 flex h-24 w-24 items-end justify-end rounded-tl-3xl bg-[#faf8f4] md:h-32 md:w-32 lg:top-0 lg:items-start lg:rounded-bl-3xl lg:rounded-tl-none">
+          <div
+            class="group relative flex h-20 w-20 items-center justify-center rounded-full bg-gray-200 md:h-28 md:w-28">
+            <div class="text-[var(--primary-color)] text-3xl">
+              <i class="fa-regular fa-magnifying-glass" aria-hidden="true"></i>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+            <div
+              class="absolute -bottom-16 right-0 z-10 hidden h-12 w-6 rounded-tr-3xl bg-gray-200 shadow-[0_-25px_0_0_#faf8f4] lg:block"></div>
+            <div
+              class="absolute -left-10 top-0 z-10 hidden h-12 w-6 rounded-tr-3xl bg-gray-200 shadow-[0_-25px_0_0_#faf8f4] lg:block"></div>
+            <div
+              class="absolute -left-10 bottom-0 z-10 h-12 w-6 rounded-br-3xl bg-gray-200 shadow-[0_15px_0_0_#faf8f4] lg:hidden"></div>
+            <div
+              class="absolute -top-16 right-0 z-10 h-12 w-6 rounded-br-3xl bg-gray-200 shadow-[0_15px_0_0_#faf8f4] lg:hidden"></div>
+          </div>
         </div>
-    </div>
-    <!-- Carousel End -->
-
-
-    <!-- Features Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="row g-0 feature-row">
-                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.1s">
-                    <div class="feature-item border h-100 p-5">
-                        <div class="btn-square bg-light rounded-circle mb-4" style="width: 64px; height: 64px;">
-                            <img class="img-fluid" src="img/icon/icon-1.png" alt="Icon">
-                        </div>
-                        <h5 class="mb-3">Award Winning</h5>
-                        <p class="mb-0">Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.3s">
-                    <div class="feature-item border h-100 p-5">
-                        <div class="btn-square bg-light rounded-circle mb-4" style="width: 64px; height: 64px;">
-                            <img class="img-fluid" src="img/icon/icon-2.png" alt="Icon">
-                        </div>
-                        <h5 class="mb-3">Professional Staff</h5>
-                        <p class="mb-0">Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.5s">
-                    <div class="feature-item border h-100 p-5">
-                        <div class="btn-square bg-light rounded-circle mb-4" style="width: 64px; height: 64px;">
-                            <img class="img-fluid" src="img/icon/icon-3.png" alt="Icon">
-                        </div>
-                        <h5 class="mb-3">Fair Prices</h5>
-                        <p class="mb-0">Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.7s">
-                    <div class="feature-item border h-100 p-5">
-                        <div class="btn-square bg-light rounded-circle mb-4" style="width: 64px; height: 64px;">
-                            <img class="img-fluid" src="img/icon/icon-4.png" alt="Icon">
-                        </div>
-                        <h5 class="mb-3">24/7 Support</h5>
-                        <p class="mb-0">Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam</p>
-                    </div>
-                </div>
+      </div>
+      <div
+        class="relative rounded-3xl bg-gray-200 px-6 pb-40 pt-8 xl:px-9 xl:pt-12">
+        <h3 class="text-2xl md:text-3xl xl:text-4xl">
+          <span>Comprehensive Logistics to</span><span> </span
+          ><span class="text-[var(--primary-color)]">Streamline Delivery</span>
+        </h3>
+        <p class="pt-4 text-lg font-thin">
+          We handle all logistical aspects, from customs clearance to delivery,
+          ensuring a hassle-free experience that allows you to focus on your
+          project while we take care of the details.
+        </p>
+        <img
+          class="absolute bottom-6 left-6 h-[85px] w-[83px]"
+          src="https://landingsite-static-web-images.s3.us-east-2.amazonaws.com/template10/arrow.svg"
+          alt=""
+          data-dont-replace="" />
+        <div
+          class="absolute bottom-0 right-0 flex h-24 w-24 items-end justify-end rounded-tl-3xl bg-[#faf8f4] md:h-32 md:w-32">
+          <div
+            class="group relative flex h-20 w-20 items-center justify-center rounded-full bg-gray-200 md:h-28 md:w-28">
+            <div class="text-[var(--primary-color)] text-3xl">
+              <i class="fa-regular fa-magnifying-glass" aria-hidden="true"></i>
             </div>
+            <div
+              class="absolute -left-10 bottom-0 z-10 h-12 w-6 rounded-br-3xl bg-gray-200 shadow-[0_15px_0_0_#faf8f4] lg:shadow-[0_25px_0_0_#faf8f4]"></div>
+            <div
+              class="absolute -top-16 right-0 z-10 h-12 w-6 rounded-br-3xl bg-gray-200 shadow-[0_15px_0_0_#faf8f4] lg:shadow-[0_25px_0_0_#faf8f4]"></div>
+          </div>
         </div>
+      </div>
     </div>
-    <!-- Features End -->
+  </div>
+</section>
 
-
-    <!-- About Start -->
-    <div class="container-xxl about my-5">
-        <div class="container">
-            <div class="row g-0">
-                <div class="col-lg-6">
-                    <div class="h-100 d-flex align-items-center justify-content-center" style="min-height: 300px;">
-                        <button type="button" class="btn-play" data-bs-toggle="modal"
-                            data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-bs-target="#videoModal">
-                            <span></span>
-                        </button>
-                    </div>
-                </div>
-                <div class="col-lg-6 pt-lg-5 wow fadeIn" data-wow-delay="0.5s">
-                    <div class="bg-white rounded-top p-5 mt-lg-5">
-                        <p class="fs-5 fw-medium text-primary">About Us</p>
-                        <h1 class="display-6 mb-4">The Best Marketing Agency to Improve Your Business</h1>
-                        <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo</p>
-                        <div class="row g-5 pt-2 mb-5">
-                            <div class="col-sm-6">
-                                <img class="img-fluid mb-4" src="img/icon/icon-5.png" alt="">
-                                <h5 class="mb-3">Managed Services</h5>
-                                <span>Clita erat ipsum et lorem et sit sed stet lorem</span>
-                            </div>
-                            <div class="col-sm-6">
-                                <img class="img-fluid mb-4" src="img/icon/icon-2.png" alt="">
-                                <h5 class="mb-3">Dedicated Experts</h5>
-                                <span>Clita erat ipsum et lorem et sit sed stet lorem</span>
-                            </div>
-                        </div>
-                        <a class="btn btn-primary rounded-pill py-3 px-5" href="">Explore More</a>
-                    </div>
-                </div>
-            </div>
+<section class="bg-[#faf8f4] code-section" id="slkrjd">
+  <div class="mx-auto max-w-7xl px-5 py-10 lg:py-20">
+    <div class="relative grid items-center gap-y-5 lg:grid-cols-2 xl:gap-10">
+      <div class="relative">
+        <h1
+          class="pr-12 text-4xl/normal font-bold [font-family:var(--font-family-heading)] lg:text-5xl/normal xl:text-6xl/normal">
+          Why Choose Bloom Rock for Your Granite Needs?
+        </h1>
+        <img
+          class="absolute left-12 top-12 z-10 w-40 lg:top-16 lg:w-64 xl:top-20"
+          src="https://landingsite-static-web-images.s3.us-east-2.amazonaws.com/template10/double-line.svg"
+          alt=""
+          data-dont-replace="" /><img
+          class="absolute right-0 top-0 z-10 block md:top-4 lg:block xl:w-16"
+          src="https://landingsite-static-web-images.s3.us-east-2.amazonaws.com/template10/four-angle-star.svg"
+          alt=""
+          data-dont-replace="" />
+      </div>
+      <p class="font-thin lg:pl-20 lg:text-lg">
+        With over 10 years of experience and expertise in the international
+        market, we take pride in the quality of the products we source. Our
+        proficient quality control system, efficient material management, and
+        dedicated Research and Development team ensure consistent excellence. We
+        continuously introduce new varieties of granite tailored to meet the
+        unique needs of our customers, staying ahead of industry trends and
+        expectations.
+      </p>
+      <img
+        class="absolute right-0 bottom-0 z-10 hidden lg:block"
+        src="https://landingsite-static-web-images.s3.us-east-2.amazonaws.com/template10/green-curve-shape-choose.svg"
+        alt=""
+        data-dont-replace="" />
+    </div>
+    <div class="relative mt-10 grid grid-cols-8 gap-2 lg:mt-28">
+      <div class="relative z-10 col-span-4 flex flex-col md:col-span-2">
+        <div
+          class="relative h-28 w-full overflow-hidden rounded-2xl bg-[var(--primary-color)] md:h-40 md:rounded-[30px] lg:h-52">
+          <img
+            src="https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/c2e5a7fb-c187-425a-0e93-56cbe6c84900/public"
+            alt="Warm black handmade sweater made of wool. Cold weather background."
+            class="h-full w-full object-cover object-center dont-replace"
+            style="border: none; outline: none;"
+            data-media='{"id":"682564400","src":"iStock","type":"image"}'
+            oncontextmenu="return false;" />
         </div>
-    </div>
-    <!-- About End -->
-
-
-    <!-- Video Modal Start -->
-    <div class="modal modal-video fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content rounded-0">
-                <div class="modal-header">
-                    <h3 class="modal-title" id="exampleModalLabel">Youtube Video</h3>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <!-- 16:9 aspect ratio -->
-                    <div class="ratio ratio-16x9">
-                        <iframe class="embed-responsive-item" src="" id="video" allowfullscreen allowscriptaccess="always"
-                            allow="autoplay"></iframe>
-                    </div>
-                </div>
-            </div>
+        <p class="mt-2 text-center text-sm font-thin md:text-base lg:text-lg">
+          Premium Black
+        </p>
+      </div>
+      <div class="relative z-10 col-span-4 flex flex-col md:col-span-2">
+        <div
+          class="relative h-28 w-full overflow-hidden rounded-2xl bg-[var(--primary-color)] md:h-40 md:rounded-[30px] lg:h-52">
+          <img
+            src="https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/c40e2bac-bc84-4a14-7270-f9fa59accf00/public"
+            alt="Black stone surface background for design Texture in your work backdrop."
+            class="h-full w-full object-cover"
+            data-media='{"id":"2167358306","src":"iStock","type":"image"}' />
         </div>
-    </div>
-    <!-- Video Modal End -->
-
-
-    <!-- Service Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-                <p class="fs-5 fw-medium text-primary">Our Services</p>
-                <h1 class="display-5 mb-5">Digital Marketing Services that We Offer</h1>
-            </div>
-            <div class="row g-4">
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="service-item position-relative h-100">
-                        <div class="service-text rounded p-5">
-                            <div class="btn-square bg-light rounded-circle mx-auto mb-4" style="width: 64px; height: 64px;">
-                                <img class="img-fluid" src="img/icon/icon-5.png" alt="Icon">
-                            </div>
-                            <h5 class="mb-3">Digital Marketing</h4>
-                            <p class="mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet</p>
-                        </div>
-                        <div class="service-btn rounded-0 rounded-bottom">
-                            <a class="text-primary fw-medium" href="">Read More<i class="bi bi-chevron-double-right ms-2"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-item position-relative h-100">
-                        <div class="service-text rounded p-5">
-                            <div class="btn-square bg-light rounded-circle mx-auto mb-4" style="width: 64px; height: 64px;">
-                                <img class="img-fluid" src="img/icon/icon-6.png" alt="Icon">
-                            </div>
-                            <h5 class="mb-3">Internet Marketing</h4>
-                            <p class="mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet</p>
-                        </div>
-                        <div class="service-btn rounded-0 rounded-bottom">
-                            <a class="text-primary fw-medium" href="">Read More<i class="bi bi-chevron-double-right ms-2"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="service-item position-relative h-100">
-                        <div class="service-text rounded p-5">
-                            <div class="btn-square bg-light rounded-circle mx-auto mb-4" style="width: 64px; height: 64px;">
-                                <img class="img-fluid" src="img/icon/icon-7.png" alt="Icon">
-                            </div>
-                            <h5 class="mb-3">Content Marketing</h4>
-                            <p class="mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet</p>
-                        </div>
-                        <div class="service-btn rounded-0 rounded-bottom">
-                            <a class="text-primary fw-medium" href="">Read More<i class="bi bi-chevron-double-right ms-2"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="service-item position-relative h-100">
-                        <div class="service-text rounded p-5">
-                            <div class="btn-square bg-light rounded-circle mx-auto mb-4" style="width: 64px; height: 64px;">
-                                <img class="img-fluid" src="img/icon/icon-8.png" alt="Icon">
-                            </div>
-                            <h5 class="mb-3">Social Marketing</h4>
-                            <p class="mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet</p>
-                        </div>
-                        <div class="service-btn rounded-0 rounded-bottom">
-                            <a class="text-primary fw-medium" href="">Read More<i class="bi bi-chevron-double-right ms-2"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-item position-relative h-100">
-                        <div class="service-text rounded p-5">
-                            <div class="btn-square bg-light rounded-circle mx-auto mb-4" style="width: 64px; height: 64px;">
-                                <img class="img-fluid" src="img/icon/icon-9.png" alt="Icon">
-                            </div>
-                            <h5 class="mb-3">B2B Marketing</h4>
-                            <p class="mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet</p>
-                        </div>
-                        <div class="service-btn rounded-0 rounded-bottom">
-                            <a class="text-primary fw-medium" href="">Read More<i class="bi bi-chevron-double-right ms-2"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="service-item position-relative h-100">
-                        <div class="service-text rounded p-5">
-                            <div class="btn-square bg-light rounded-circle mx-auto mb-4" style="width: 64px; height: 64px;">
-                                <img class="img-fluid" src="img/icon/icon-10.png" alt="Icon">
-                            </div>
-                            <h5 class="mb-3">E-mail Marketing</h4>
-                            <p class="mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet</p>
-                        </div>
-                        <div class="service-btn rounded-0 rounded-bottom">
-                            <a class="text-primary fw-medium" href="">Read More<i class="bi bi-chevron-double-right ms-2"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <p class="mt-2 text-center text-sm font-thin md:text-base lg:text-lg">
+          Steel Grey
+        </p>
+      </div>
+      <div class="relative z-10 col-span-4 flex flex-col md:col-span-2">
+        <div
+          class="relative h-28 w-full overflow-hidden rounded-2xl bg-[var(--primary-color)] md:h-40 md:rounded-[30px] lg:h-52">
+          <img
+            src="https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/a3d76574-681a-497e-7250-49c306e5f300/public"
+            alt="Natural Marble High Resolution Marble texture background, Italian marble slab, The texture of limestone Polished natural granite marbel for Ceramic Floor Tiles And Wall Tiles."
+            class="h-full w-full object-cover"
+            data-media='{"id":"1684836734","src":"iStock","type":"image"}' />
         </div>
-    </div>
-    <!-- Service End -->
-
-
-    <!-- Project Start -->
-    <div class="container-xxl pt-5">
-        <div class="container">
-            <div class="text-center text-md-start pb-5 pb-md-0 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-                <p class="fs-5 fw-medium text-primary">Our Projects</p>
-                <h1 class="display-5 mb-5">We've Done Lot's of Awesome Projects</h1>
-            </div>
-            <div class="owl-carousel project-carousel wow fadeInUp" data-wow-delay="0.1s">
-                <div class="project-item mb-5">
-                    <div class="position-relative">
-                        <img class="img-fluid" src="img/project-1.jpg" alt="">
-                        <div class="project-overlay">
-                            <a class="btn btn-lg-square btn-light rounded-circle m-1" href="img/project-1.jpg" data-lightbox="project"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-light rounded-circle m-1" href=""><i class="fa fa-link"></i></a>
-                        </div>
-                    </div>
-                    <div class="p-4">
-                        <a class="d-block h5" href="">Data Analytics & Insights</a>
-                        <span>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem</span>
-                    </div>
-                </div>
-                <div class="project-item mb-5">
-                    <div class="position-relative">
-                        <img class="img-fluid" src="img/project-2.jpg" alt="">
-                        <div class="project-overlay">
-                            <a class="btn btn-lg-square btn-light rounded-circle m-1" href="img/project-2.jpg" data-lightbox="project"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-light rounded-circle m-1" href=""><i class="fa fa-link"></i></a>
-                        </div>
-                    </div>
-                    <div class="p-4">
-                        <a class="d-block h5" href="">Marketing Content Strategy</a>
-                        <span>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem</span>
-                    </div>
-                </div>
-                <div class="project-item mb-5">
-                    <div class="position-relative">
-                        <img class="img-fluid" src="img/project-3.jpg" alt="">
-                        <div class="project-overlay">
-                            <a class="btn btn-lg-square btn-light rounded-circle m-1" href="img/project-3.jpg" data-lightbox="project"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-light rounded-circle m-1" href=""><i class="fa fa-link"></i></a>
-                        </div>
-                    </div>
-                    <div class="p-4">
-                        <a class="d-block h5" href="">Business Target Market</a>
-                        <span>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem</span>
-                    </div>
-                </div>
-                <div class="project-item mb-5">
-                    <div class="position-relative">
-                        <img class="img-fluid" src="img/project-4.jpg" alt="">
-                        <div class="project-overlay">
-                            <a class="btn btn-lg-square btn-light rounded-circle m-1" href="img/project-4.jpg" data-lightbox="project"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-light rounded-circle m-1" href=""><i class="fa fa-link"></i></a>
-                        </div>
-                    </div>
-                    <div class="p-4">
-                        <a class="d-block h5" href="">Social Marketing Strategy</a>
-                        <span>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem</span>
-                    </div>
-                </div>
-            </div>
+        <p class="mt-2 text-center text-sm font-thin md:text-base lg:text-lg">
+          Brown Marble
+        </p>
+      </div>
+      <div class="relative z-10 col-span-4 flex flex-col md:col-span-2">
+        <div
+          class="relative h-28 w-full overflow-hidden rounded-2xl bg-[var(--primary-color)] md:h-40 md:rounded-[30px] lg:h-52">
+          <img
+            src="https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/3f9a31e0-1573-4172-8504-dcf63ce66500/public"
+            alt="blue and white stone seamless texture macro photo"
+            class="h-full w-full object-cover"
+            data-media='{"id":"525041248","src":"iStock","type":"image"}' />
         </div>
+        <p class="mt-2 text-center text-sm font-thin md:text-base lg:text-lg">
+          Blue Veined
+        </p>
+      </div>
     </div>
-    <!-- Project End -->
+  </div>
+</section>
 
+<section class="bg-[#faf8f4] code-section" id="scapx9h">
+  <div class="mx-auto max-w-7xl px-5 py-10 lg:py-20">
+    <div class="relative grid items-center gap-y-5 lg:grid-cols-2 xl:gap-10">
+      <div class="relative">
+        <h1
+          class="text-4xl/normal font-bold [font-family:var(--font-family-heading)] lg:text-5xl/normal xl:text-6xl/normal">
+          Exceptional Granite Solutions for Your Business Needs
+        </h1>
+        <img
+          class="absolute left-32 top-12 z-10 w-40 lg:top-16 lg:w-64 xl:left-52 xl:top-20"
+          src="https://landingsite-static-web-images.s3.us-east-2.amazonaws.com/template10/double-line.svg"
+          alt=""
+          data-dont-replace="" />
+      </div>
+      <p class="font-thin lg:pl-20 lg:text-lg">
+        Unlock the full potential of your projects with our premium selection of
+        Indian granite. At Bloom Rock, we prioritize quality and reliability,
+        offering tailored procurement solutions to meet your unique
+        specifications. Our sourcing expertise includes high-grade varieties
+        such as Premium Black, Steel Grey, and many more.
+      </p>
+      <img
+        class="absolute left-1/2 top-0 z-10 hidden h-[76px] w-[72px] -translate-x-1/2 lg:block"
+        src="https://landingsite-static-web-images.s3.us-east-2.amazonaws.com/template10/star.svg"
+        alt=""
+        data-dont-replace="" />
+    </div>
+    <div class="grid gap-5 pt-10 lg:grid-cols-3 lg:gap-9 lg:pt-28">
+      <div class="relative rounded-3xl bg-gray-200 p-4 md:pb-20 lg:pb-8">
+        <img
+          class="relative z-40 h-60 w-full rounded-xl object-cover md:h-72 lg:h-56 xl:h-72 dont-replace"
+          src="https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/dae49516-9338-4707-8fc5-bb7fdd65f600/public"
+          alt="Granite quarry with large stone blocks and rocky cliff walls in the background, under a clear sky."
+          data-media='{"id":"ifh2kj5","src":"upload","type":"image"}'
+          oncontextmenu="return false;" />
+        <h3 class="pt-8 text-xl font-bold text-black/80">
+          Seamless Sourcing of Premium Granite
+        </h3>
+        <p class="pt-4 text-lg text-gray-800 h-full">
+          Experience a streamlined approach to sourcing with our strong ties to
+          trusted quarries in India, ensuring consistent quality and competitive
+          pricing.
+        </p>
+      </div>
+      <div class="relative rounded-3xl bg-gray-200 p-4 md:pb-20 lg:pb-8">
+        <img
+          class="relative z-40 h-60 w-full rounded-xl object-cover md:h-72 lg:h-56 xl:h-72 dont-replace"
+          src="https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/0fa0bf20-4662-436e-f761-5bcfcd6ab800/publicContain"
+          alt="Abstract art of a couple, intertwined with floral patterns. One face is light, the other dark, set against a textured background."
+          data-media='{"id":"iougpbv","src":"upload","type":"image"}'
+          oncontextmenu="return false;" />
+        <h3 class="pt-8 text-xl font-bold text-black/80">
+          Quality Assurance with Every Order
+        </h3>
+        <p class="pt-4 text-lg text-gray-800 h-full">
+          Our rigorous inspection protocols and detailed documentation ensure
+          you receive only the highest quality granite, reducing your risk and
+          providing peace of mind.
+        </p>
+      </div>
+      <div class="relative rounded-3xl bg-gray-200 p-4 md:pb-20 lg:pb-8">
+        <img
+          class="relative z-40 h-60 w-full rounded-xl object-cover md:h-72 lg:h-56 xl:h-72 dont-replace"
+          src="https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/bad724a8-51a3-483f-0e07-9d3dda9df100/publicContain"
+          alt="Stacks of wooden pallets holding wrapped slabs in a warehouse with workers in the background."
+          data-media='{"id":"isfg5pk","src":"upload","type":"image"}'
+          oncontextmenu="return false;" />
+        <h3 class="pt-8 text-xl font-bold text-black/80">
+          Effortless Logistics for All Deliveries
+        </h3>
+        <p class="pt-4 text-lg text-gray-800 h-full">
+          Let us manage the logistics from the moment of procurement to delivery
+          at your site, ensuring a hassle-free experience that allows you to
+          focus on your core business activities.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <!-- Quote Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="row g-5">
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <p class="fs-5 fw-medium text-primary">Get A Quote</p>
-                    <h1 class="display-5 mb-4">Need Our Expert Help? We're Here!</h1>
-                    <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo</p>
-                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo</p>
-                    <a class="d-inline-flex align-items-center rounded overflow-hidden border border-primary" href="">
-                        <span class="btn-lg-square bg-primary" style="width: 55px; height: 55px;">
-                            <i class="fa fa-phone-alt text-white"></i>
-                        </span>
-                        <span class="fs-5 fw-medium mx-4">+012 345 6789</span>
-                    </a>
-                </div>
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <h2 class="mb-4">Get A Free Quote</h2>
-                    <div class="row g-3">
-                        <div class="col-sm-6">
-                            <div class="form-floating">
-                                <input type="text" class="form-control" id="name" placeholder="Your Name">
-                                <label for="name">Your Name</label>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="form-floating">
-                                <input type="email" class="form-control" id="mail" placeholder="Your Email">
-                                <label for="mail">Your Email</label>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="form-floating">
-                                <input type="text" class="form-control" id="mobile" placeholder="Your Mobile">
-                                <label for="mobile">Your Mobile</label>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="form-floating">
-                                <select class="form-select" id="service">
-                                    <option selected>Digital Marketing</option>
-                                    <option value="">Social Marketing</option>
-                                    <option value="">Content Marketing</option>
-                                    <option value="">E-mail Marketing</option>
-                                </select>
-                                <label for="service">Choose A Service</label>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="form-floating">
-                                <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 130px"></textarea>
-                                <label for="message">Message</label>
-                            </div>
-                        </div>
-                        <div class="col-12 text-center">
-                            <button class="btn btn-primary w-100 py-3" type="submit">Submit Now</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<section id="slpot8" class="bg-[#faf8f4] code-section py-10 lg:py-20">
+  <div class="mx-auto max-w-7xl px-5">
+    <div class="text-center mb-12">
+      <h2
+        class="text-4xl/normal font-bold [font-family:var(--font-family-heading)] lg:text-5xl/normal xl:text-6xl/normal mb-4">
+        What Our Clients Say
+      </h2>
+      <p
+        class="text-lg font-light text-[var(--gray-text-color)] max-w-3xl mx-auto">
+        Hear from businesses who have experienced the Bloom Rock difference in
+        their granite procurement journey.
+      </p>
+    </div>
+
+    <div class="grid gap-11 sm:grid-cols-2 lg:grid-cols-2 max-w-5xl mx-auto">
+      <div class="relative bg-white p-8 rounded-3xl shadow-lg">
+        <div class="flex items-center gap-2.5 pb-3">
+          <p class="text-xl font-semibold opacity-80">Sophia Lee</p>
         </div>
-    </div>
-    <!-- Quote Start -->
-
-
-    <!-- Team Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-                <p class="fs-5 fw-medium text-primary">Our Team</p>
-                <h1 class="display-5 mb-5">Our Expert People Ready to Help You</h1>
-            </div>
-            <div class="row g-4">
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="team-item rounded overflow-hidden pb-4">
-                        <img class="img-fluid mb-4" src="img/team-1.jpg" alt="">
-                        <h5>Alex Robin</h5>
-                        <span class="text-primary">Founder & CEO</span>
-                        <ul class="team-social">
-                            <li><a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a></li>
-                            <li><a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a></li>
-                            <li><a class="btn btn-square" href=""><i class="fab fa-linkedin-in"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="team-item rounded overflow-hidden pb-4">
-                        <img class="img-fluid mb-4" src="img/team-2.jpg" alt="">
-                        <h5>Adam Crew</h5>
-                        <span class="text-primary">Co Founder</span>
-                        <ul class="team-social">
-                            <li><a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a></li>
-                            <li><a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a></li>
-                            <li><a class="btn btn-square" href=""><i class="fab fa-linkedin-in"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="team-item rounded overflow-hidden pb-4">
-                        <img class="img-fluid mb-4" src="img/team-3.jpg" alt="">
-                        <h5>Boris Johnson</h5>
-                        <span class="text-primary">Executive Manager</span>
-                        <ul class="team-social">
-                            <li><a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a></li>
-                            <li><a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a></li>
-                            <li><a class="btn btn-square" href=""><i class="fab fa-linkedin-in"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-                    <div class="team-item rounded overflow-hidden pb-4">
-                        <img class="img-fluid mb-4" src="img/team-4.jpg" alt="">
-                        <h5>Robert Jordan</h5>
-                        <span class="text-primary">Digital Marketer</span>
-                        <ul class="team-social">
-                            <li><a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a></li>
-                            <li><a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a></li>
-                            <li><a class="btn btn-square" href=""><i class="fab fa-linkedin-in"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+        <div class="flex items-center gap-3 pb-3 md:pb-6">
+          <div class="flex items-center gap-0.5">
+            <i class="fa-solid fa-star text-yellow-500" aria-hidden="true"></i>
+            <i class="fa-solid fa-star text-yellow-500" aria-hidden="true"></i>
+            <i class="fa-solid fa-star text-yellow-500" aria-hidden="true"></i>
+            <i class="fa-solid fa-star text-yellow-500" aria-hidden="true"></i>
+            <i class="fa-solid fa-star text-yellow-500" aria-hidden="true"></i>
+          </div>
         </div>
-    </div>
-    <!-- Team End -->
+        <p class="text-base font-thin text-[var(--gray-text-color)]">
+          Bloom Rock's commitment to quality is unmatched. The granite we
+          received for our project exceeded expectations and was delivered on
+          time.
+        </p>
+        <img
+          class="absolute -top-5 right-5 z-10 w-12"
+          src="https://landingsite-static-web-images.s3.us-east-2.amazonaws.com/template10/four-angle-star.svg"
+          alt=""
+          data-dont-replace="" />
+      </div>
 
-
-    <!-- Testimonial Start -->
-    <div class="container-xxl pt-5">
-        <div class="container">
-            <div class="text-center text-md-start pb-5 pb-md-0 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-                <p class="fs-5 fw-medium text-primary">Testimonial</p>
-                <h1 class="display-5 mb-5">What Clients Say About Our Services!</h1>
-            </div>
-            <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
-                <div class="testimonial-item rounded p-4 p-lg-5 mb-5">
-                    <img class="mb-4" src="img/testimonial-1.jpg" alt="">
-                    <p class="mb-4">Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo</p>
-                    <h5>Client Name</h5>
-                    <span class="text-primary">Profession</span>
-                </div>
-                <div class="testimonial-item rounded p-4 p-lg-5 mb-5">
-                    <img class="mb-4" src="img/testimonial-2.jpg" alt="">
-                    <p class="mb-4">Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo</p>
-                    <h5>Client Name</h5>
-                    <span class="text-primary">Profession</span>
-                </div>
-                <div class="testimonial-item rounded p-4 p-lg-5 mb-5">
-                    <img class="mb-4" src="img/testimonial-3.jpg" alt="">
-                    <p class="mb-4">Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo</p>
-                    <h5>Client Name</h5>
-                    <span class="text-primary">Profession</span>
-                </div>
-                <div class="testimonial-item rounded p-4 p-lg-5 mb-5">
-                    <img class="mb-4" src="img/testimonial-4.jpg" alt="">
-                    <p class="mb-4">Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo</p>
-                    <h5>Client Name</h5>
-                    <span class="text-primary">Profession</span>
-                </div>
-            </div>
+      <div class="relative bg-white p-8 rounded-3xl shadow-lg">
+        <div class="flex items-center gap-2.5 pb-3">
+          <p class="text-xl font-semibold opacity-80">Liam Garcia</p>
         </div>
-    </div>
-    <!-- Testimonial End -->
-
-
-    <!-- Footer Start -->
-    <div class="container-fluid bg-dark footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="row g-5">
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-4">Our Office</h4>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
-                    <div class="d-flex pt-3">
-                        <a class="btn btn-square btn-light rounded-circle me-2" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-square btn-light rounded-circle me-2" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-square btn-light rounded-circle me-2" href=""><i class="fab fa-youtube"></i></a>
-                        <a class="btn btn-square btn-light rounded-circle me-2" href=""><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-4">Quick Links</h4>
-                    <a class="btn btn-link" href="">About Us</a>
-                    <a class="btn btn-link" href="">Contact Us</a>
-                    <a class="btn btn-link" href="">Our Services</a>
-                    <a class="btn btn-link" href="">Terms & Condition</a>
-                    <a class="btn btn-link" href="">Support</a>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-4">Business Hours</h4>
-                    <p class="mb-1">Monday - Friday</p>
-                    <h6 class="text-light">09:00 am - 07:00 pm</h6>
-                    <p class="mb-1">Saturday</p>
-                    <h6 class="text-light">09:00 am - 12:00 pm</h6>
-                    <p class="mb-1">Sunday</p>
-                    <h6 class="text-light">Closed</h6>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-4">Newsletter</h4>
-                    <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
-                    <div class="position-relative w-100">
-                        <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
-                        <button type="button" class="btn btn-light py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
-                    </div>
-                </div>
-            </div>
+        <div class="flex items-center gap-3 pb-3 md:pb-6">
+          <div class="flex items-center gap-0.5">
+            <i class="fa-solid fa-star text-yellow-500" aria-hidden="true"></i>
+            <i class="fa-solid fa-star text-yellow-500" aria-hidden="true"></i>
+            <i class="fa-solid fa-star text-yellow-500" aria-hidden="true"></i>
+            <i class="fa-solid fa-star text-yellow-500" aria-hidden="true"></i>
+            <i class="fa-solid fa-star text-yellow-500" aria-hidden="true"></i>
+          </div>
         </div>
+        <p class="text-base font-thin text-[var(--gray-text-color)]">
+          Working with Indresh at Bloom Rock has transformed our sourcing
+          process. His expertise and network have made a significant difference
+          for our business.
+        </p>
+        <img
+          class="absolute -top-5 right-5 z-10 w-12"
+          src="https://landingsite-static-web-images.s3.us-east-2.amazonaws.com/template10/four-angle-star.svg"
+          alt=""
+          data-dont-replace="" />
+      </div>
     </div>
-    <!-- Footer End -->
+  </div>
+</section>
 
+<section id="s7n67lsf" class="bg-[#faf8f4] code-section py-10 lg:py-20">
+  <div class="mx-auto max-w-7xl px-5">
+    <div class="text-center mb-12">
+      <h2
+        class="text-4xl/normal font-bold [font-family:var(--font-family-heading)] lg:text-5xl/normal xl:text-6xl/normal mb-4">
+        Contact Us
+      </h2>
+      <p
+        class="text-lg font-light text-[var(--gray-text-color)] max-w-3xl mx-auto">
+        Reach out to Bloom Rock for all your granite procurement needs. We're
+        here to assist you.
+      </p>
+    </div>
 
-    <!-- Copyright Start -->
-    <div class="container-fluid copyright py-4">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    &copy; <a class="fw-medium text-light" href="#">Your Site Name</a>, All Right Reserved.
-                </div>
-                <div class="col-md-6 text-center text-md-end">
-                    <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                    Designed By <a class="fw-medium text-light" href="https://htmlcodex.com">HTML Codex</a>
-                </div>
-            </div>
+    <div class="grid gap-8 sm:grid-cols-3 max-w-5xl mx-auto">
+      <!-- Phone Contact -->
+      <div
+        class="bg-white p-8 rounded-3xl shadow-lg flex flex-col items-center text-center">
+        <div
+          class="h-16 w-16 rounded-full bg-[var(--primary-color)] flex items-center justify-center mb-6">
+          <i
+            class="fa-solid fa-phone text-white text-2xl"
+            aria-hidden="true"></i>
         </div>
+        <h3 class="text-xl font-semibold mb-2">Phone</h3>
+        <p class="text-base font-thin text-[var(--gray-text-color)] mb-4">
+          Call us directly
+        </p>
+        <a
+          href="tel:+4917629880410"
+          class="text-lg font-medium text-[var(--primary-color)]"
+          >+49 176 2988 0410</a
+        >
+      </div>
+
+      <!-- Email Contact -->
+      <div
+        class="bg-white p-8 rounded-3xl shadow-lg flex flex-col items-center text-center">
+        <div
+          class="h-16 w-16 rounded-full bg-[var(--primary-color)] flex items-center justify-center mb-6">
+          <i
+            class="fa-solid fa-envelope text-white text-2xl"
+            aria-hidden="true"></i>
+        </div>
+        <h3 class="text-xl font-semibold mb-2">Email</h3>
+        <p class="text-base font-thin text-[var(--gray-text-color)] mb-4">
+          Write to us anytime
+        </p>
+        <a
+          href="mailto:bloomrock07@gmail.com"
+          class="text-lg font-medium text-[var(--primary-color)]"
+          >bloomrock07@gmail.com</a
+        >
+      </div>
+
+      <!-- Address Contact -->
+      <div
+        class="bg-white p-8 rounded-3xl shadow-lg flex flex-col items-center text-center">
+        <div
+          class="h-16 w-16 rounded-full bg-[var(--primary-color)] flex items-center justify-center mb-6">
+          <i
+            class="fa-solid fa-location-dot text-white text-2xl"
+            aria-hidden="true"></i>
+        </div>
+        <h3 class="text-xl font-semibold mb-2">Address</h3>
+        <p class="text-base font-thin text-[var(--gray-text-color)] mb-4">
+          Saxony
+        </p>
+        <address
+          class="text-lg font-medium text-[var(--primary-color)] not-italic">
+          Germany
+        </address>
+      </div>
     </div>
-    <!-- Copyright End -->
+  </div>
+</section>
 
-
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
-
-
-    <!-- JavaScript Libraries -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
-
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
-</body>
-
-</html>
+<section class="bg-[#faf8f4] code-section" id="scohdw8">
+<div class="mx-auto max-w-7xl px-5 py-10 lg:py-24">
+<div class="relative w-full overflow-hidden rounded-3xl pb-28 pl-20 pr-5 pt-12 md:pr-48 lg:pt-12">
+<div class="relative z-30 ml-auto space-y-4 lg:max-w-lg lg:space-y-8">
+  <h3 class="text-right text-5xl font-bold [font-family:var(--font-family-heading)] text-[#ffffff] lg:text-left">Get in Touch with Bloom Rock</h3>
+  <form data-landingsite-contact-form="">
+    <div class="flex flex-col space-y-4 md:space-y-6">
+      <div class="flex flex-col space-y-4 md:flex-row md:space-x-8 md:space-y-0">
+        <div class="w-full">
+          <div><label for="name" class="text-xl font-medium text-[#ffffff]">Your Name</label></div>
+          <div><input id="name" name="name" type="text" class="w-full rounded p-2" required=""></div>
+        </div>
+      </div>
+      <div class="flex flex-col space-y-4 md:flex-row md:space-x-8 md:space-y-0">
+        <div class="w-full">
+          <div><label for="email" class="text-xl font-medium text-[#ffffff]">Email Address</label></div>
+          <div><input id="email" type="email" name="email" class="w-full rounded p-2" required=""></div>
+        </div>
+      </div>
+      <div class="w-full">
+        <div><label for="message" class="text-xl font-medium text-[#ffffff]">Your Inquiry</label></div>
+        <div><textarea id="message" name="message" rows="4" class="w-full rounded p-2" required=""></textarea></div>
+      </div>
+      <div class="flex justify-end lg:justify-start"><button type="submit" class="items-center rounded-[var(--button-rounded-radius)] rounded-br-none bg-[#ffffff] px-[var(--button-padding-x)] py-[var(--button-padding-y)] text-lg text-gray-800 hover:bg-gray-300">Submit Your Inquiry</button></div>
+    </div>
+  </form>
+</div>
+<div class="absolute bottom-0 right-0 z-30 flex h-24 w-24 items-end justify-end rounded-tl-3xl bg-[#faf8f4] md:top-0 md:h-32 md:w-32 md:items-start md:rounded-bl-3xl md:rounded-tl-none lg:h-40 lg:w-40">
+  <div class="group relative flex h-20 w-20 items-center justify-center rounded-3xl bg-[var(--primary-color)] md:h-28 md:w-28 lg:h-36 lg:w-36"><i class="fas fa-comment-dots text-5xl text-white" aria-hidden="true"></i>
+    <div class="absolute -bottom-16 right-0 z-10 hidden h-12 w-4 rounded-tr-3xl bg-[var(--primary-color)] shadow-[0_-16px_0_0_#faf8f4] md:block"></div>
+    <div class="absolute -left-8 top-0 z-10 hidden h-12 w-4 rounded-tr-3xl bg-[var(--primary-color)] shadow-[0_-25px_0_0_#faf8f4] lg:block"></div>
+    <div class="absolute -left-8 bottom-0 z-10 h-12 w-4 rounded-br-3xl bg-[var(--primary-color)] shadow-[0_16px_0_0_#faf8f4] md:hidden"></div>
+    <div class="shadow-[0_16px_0_0_#faf8f4]lg:hidden absolute -top-16 right-0 z-10 h-12 w-4 rounded-br-3xl bg-[var(--primary-color)]"></div>
+  </div>
+</div>
+<div class="absolute bottom-0 right-0 top-0 z-20 -mr-20 h-full w-2/3 -skew-x-12 bg-[var(--primary-color)] sm:w-3/4"></div>
+<div class="pointer-events-none absolute left-0 top-0 z-10 h-full w-full bg-black/40 sm:w-1/2 lg:w-2/5"></div><img class="absolute left-0 top-0 z-0 h-full w-full object-cover sm:w-1/2 lg:w-2/5" src="https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/0f3b2c5f-8b76-47e1-2c8c-851f722af400/publicContain" alt="White Marble seamless texture, Neolith Calacatta Luxe, Calacatta Marble, Marble Trend Statuario Gold, Photography Backdrops White Abstract Texture Background Backdrop Marble Wall Tile." data-landingsite-gallery-type="image" data-media="{&quot;id&quot;:&quot;2161766253&quot;,&quot;src&quot;:&quot;iStock&quot;,&quot;type&quot;:&quot;image&quot;}"><img class="absolute bottom-8 right-4 z-20 hidden h-[194px] w-[182px] lg:block" src="https://landingsite-static-web-images.s3.us-east-2.amazonaws.com/template10/yellow-star.svg" alt="" data-dont-replace="">
+</div>
+</div>
+</section></div><div><footer class="bg-[var(--primary-color)] code-section" id="global-footer">
+<div class="mx-auto max-w-7xl px-5 pb-10 pt-10 lg:pb-24 lg:pt-14">
+<div class="flex flex-col items-center justify-center space-y-5 pb-8 lg:flex-row lg:justify-between lg:space-y-0 lg:space-x-12 lg:pb-14">
+<a class="block text-3xl font-bold [font-family:var(--font-family-heading)] text-[#ffffff]" href="/" data-logo=""><img src="https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/4391033f-610b-47a1-8e5c-32f9b8dece00/public" alt="Bloom Rock Logo" class="h-20"></a>
+<div class="flex flex-col items-center gap-4 text-[#ffffff] sm:flex-row sm:gap-8 lg:gap-14">
+  <a href="/about" class="transition ease-linear lg:hover:text-[var(--light-text-color)]">About Us</a>
+  <a href="/products" class="transition ease-linear lg:hover:text-[var(--light-text-color)]">Products</a>
+  <a href="/services" class="transition ease-linear lg:hover:text-[var(--light-text-color)]">Our Services</a>
+  <a href="/gallery" class="transition ease-linear lg:hover:text-[var(--light-text-color)]">Gallery</a>
+  <a href="/contact" class="transition ease-linear lg:hover:text-[var(--light-text-color)]">Get In Touch</a>
+</div>
+<div class="flex items-center gap-6 lg:gap-10">
+  <a href="/" class="primary-color-text flex h-10 w-10 items-center justify-center rounded-full bg-[#ffffff] text-[var(--primary-color)] transition ease-linear hover:bg-black hover:text-[#ffffff] lg:h-16 lg:w-16">
+    <i class="fa-brands fa-instagram text-xl lg:text-3xl" aria-hidden="true"></i>
+  </a>
+  <a href="/" class="primary-color-text flex h-10 w-10 items-center justify-center rounded-full bg-[#ffffff] text-[var(--primary-color)] transition ease-linear hover:bg-black hover:text-[#ffffff] lg:h-16 lg:w-16">
+    <i class="fa-brands fa-facebook-f text-xl lg:text-3xl" aria-hidden="true"></i>
+  </a>
+  <a href="/" class="primary-color-text flex h-10 w-10 items-center justify-center rounded-full bg-[#ffffff] text-[var(--primary-color)] transition ease-linear hover:bg-black hover:text-[#ffffff] lg:h-16 lg:w-16">
+    <i class="fa-brands fa-x-twitter text-xl lg:text-3xl" aria-hidden="true"></i>
+  </a>
+</div>
+</div>
+<div class="flex flex-col items-center justify-center space-y-5 md:flex-row md:justify-between lg:space-y-0">
+<p class="text-center text-lg font-thin text-[#ffffff] md:text-left">@ copyright bloomrock.com 2025. All Rights Reserved</p>
+</div>
+</div>
+</footer></div></div><script src="/embed/main.umd.js"></script>
+      </div>
+    </div>
+  </body></html>
